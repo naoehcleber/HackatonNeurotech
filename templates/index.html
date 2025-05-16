@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de Paciente</title>
+</head>
+<body>
+  <h1>Ficha de Cadastro do Paciente</h1>
+
+  <form method="post">
+    {% csrf_token %}
+    <p>{{ form.as_p }}</p>
+    <button type="submit">Enviar</button>
+  </form>
+
+</body>
+</html>
